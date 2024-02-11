@@ -925,7 +925,7 @@ footer {
 
     .titre_link a h2 {
         color: white;
-        font-size: 5vw;
+        font-size: 4vw;
         margin-top: -5vh;
     }
 
@@ -998,7 +998,7 @@ footer {
     }
 
     .content-1-1 h1 {
-        font-size: 8vw;
+        font-size: 10vw;
         padding-bottom: 10px;
         margin-top: 2vh;
         text-align: center;
@@ -1009,7 +1009,7 @@ footer {
     }
 
     .content-1-1 p {
-        line-height: 15px;
+        line-height: 18px;
         margin-top: 0.5vh;
         text-align: center;
         line-height: 20px;
