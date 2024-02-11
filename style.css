@@ -140,7 +140,7 @@ header {
 
 #page-1 {
     width: 100%;
-    height: 90vh;
+    height: 95vh;
 }
 
 
@@ -220,6 +220,7 @@ header {
     border-radius: 50%;
     border: 1px solid rgb(255, 77, 0);
     transition: 0.8s ease-in;
+    display: none;
 }
 
 #botton-1 a {
@@ -269,12 +270,6 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-
-.card-content::-webkit-scrollbar {
-    width: 12px;
-    background-color: rgba(0, 0, 0, 0);
-}
-
 
 .card-1 {
     min-width: 19vw;
@@ -704,7 +699,7 @@ header {
 
 #page-4 {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -715,6 +710,8 @@ header {
     height: 55vh;
     display: flex;
     filter: drop-shadow(20px 20px 15px rgba(0, 0, 0, 0.329));
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .page-4-content-1-1 {
@@ -726,16 +723,17 @@ header {
     border-radius: 20px 0px 0px 20px;
     transition: 0.8s ease-in;
 }
-@media (min-width:800px){
+
+@media (min-width:800px) {
     .page-4-content-1:hover {
         .page-4-content-1-1 {
             width: 30%;
         }
-    
+
         .page-4-content-1-2 {
             width: 70%;
         }
-    
+
     }
 }
 
@@ -1155,7 +1153,6 @@ footer {
         background-color: rgba(0, 0, 0, 0);
     }
 
-
     .card-1 {
         min-width: 60vw;
         height: 55vh;
@@ -1335,11 +1332,12 @@ footer {
         align-items: center;
     }
 
-    .video-1  h1 {
+    .video-1 h1 {
         width: 100%;
         font-size: 10vw;
     }
-    .video-1 p{
+
+    .video-1 p {
         width: 100%;
     }
 
@@ -1396,6 +1394,7 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
     #page-3 {
         width: 100%;
         height: 100%;
@@ -1403,7 +1402,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     .page-3-content-1 {
         width: 100%;
         height: 15vh;
@@ -1412,15 +1411,15 @@ footer {
         align-items: center;
         text-align: center;
     }
-    
+
     .page-3-content-1 h3 {
         font-size: 3vw;
     }
-    
+
     .page-3-content-1 h1 {
         font-size: 8vw;
     }
-    
+
     .page-3-content-2 {
         width: 100%;
         height: 100%;
@@ -1432,7 +1431,7 @@ footer {
         margin-right: auto;
         gap: 10px;
     }
-    
+
     .img-1 {
         width: 83%;
         background-image: url(./Assets/jebale-1.jpg);
@@ -1444,20 +1443,20 @@ footer {
         animation-range: 0px 400px;
         background-repeat: no-repeat;
     }
-    
+
     @keyframes scolle-2 {
         from {
             opacity: 0;
             height: 0;
         }
-    
+
         to {
             opacity: 1;
             height: 43vh;
         }
     }
-    
-    
+
+
     .img-2 {
         width: 40%;
         height: 40vh;
@@ -1470,20 +1469,20 @@ footer {
         animation-range: 0px 200px;
         background-repeat: no-repeat;
     }
-    
+
     @keyframes scolle-3 {
         from {
             opacity: 0;
             transform: scale(0);
         }
-    
+
         to {
             opacity: 1;
             transform: scale(1);
         }
     }
-    
-    
+
+
     .img-3 {
         width: 40%;
         height: 40vh;
@@ -1496,7 +1495,7 @@ footer {
         animation-range: 0px 200px;
         background-repeat: no-repeat;
     }
-    
+
     .img-bg {
         width: 100%;
         height: 100%;
@@ -1506,7 +1505,7 @@ footer {
         justify-content: center;
         align-items: end;
     }
-    
+
     .img-bg-2 {
         width: 100%;
         height: 8vh;
@@ -1515,7 +1514,7 @@ footer {
         align-items: center;
         margin-bottom: 4vh;
     }
-    
+
     .img-bg-2-titre {
         width: 100%;
         height: 100%;
@@ -1523,7 +1522,7 @@ footer {
         justify-content: start;
         align-items: center;
     }
-    
+
     .img-bg-2-titre h1 {
         margin-left: 0;
         font-size: 6vw;
@@ -1531,7 +1530,7 @@ footer {
         width: 100%;
         text-align: center;
     }
-    
+
     .img-bg-2-botton {
         width: 50%;
         height: 100%;
@@ -1540,7 +1539,7 @@ footer {
         align-items: center;
         display: none;
     }
-    
+
     .material-symbols-outlined {
         font-variation-settings:
             'FILL' 0,
@@ -1548,7 +1547,7 @@ footer {
             'GRAD' 0,
             'opsz' 24
     }
-    
+
     #botton-2 {
         width: 2.5vw;
         height: 5vh;
@@ -1561,21 +1560,22 @@ footer {
         margin-right: 2vw;
         margin-top: 1.5vh;
     }
-    
+
     #botton-2:hover {
         background-color: white;
-    
+
         a {
             color: black;
         }
     }
-    
+
     #botton-2 a {
         text-decoration: none;
         color: white;
         padding-top: 0.5vh;
         transition: 0.8s ease-in;
     }
+
     #page-4 {
         width: 100%;
         height: 100%;
@@ -1584,7 +1584,7 @@ footer {
         align-items: center;
         margin-top: 5vh;
     }
-    
+
     .page-4-content-1 {
         width: 80%;
         height: 80%;
@@ -1592,7 +1592,7 @@ footer {
         filter: drop-shadow(20px 20px 15px rgba(0, 0, 0, 0.329));
         flex-wrap: wrap;
     }
-    
+
     .page-4-content-1-1 {
         width: 100%;
         height: 40vh;
@@ -1602,7 +1602,7 @@ footer {
         border-radius: 20px 20px 0px 0px;
         transition: 0.8s ease-in;
     }
-    
+
     .page-4-content-1-2 {
         width: 100%;
         height: 100%;
@@ -1613,7 +1613,7 @@ footer {
         align-items: center;
         transition: 0.8s ease-in;
     }
-    
+
     .contact {
         width: 100%;
         height: 100%;
@@ -1622,17 +1622,17 @@ footer {
         align-items: center;
         flex-wrap: wrap;
     }
-    
+
     .contact h1 {
         text-align: center;
         font-size: 8vw;
         margin-top: 0;
     }
-    
+
     label {
         font-size: 5vw;
     }
-    
+
     input {
         font-size: 1.4vw;
         margin-bottom: 1vh;
@@ -1640,7 +1640,7 @@ footer {
         width: 60vw;
         height: 4vh;
     }
-    
+
     #contact-botton {
         width: 100%;
         border-radius: 0;
@@ -1650,6 +1650,7 @@ footer {
         font-size: 5vw;
         margin-bottom: 5vh;
     }
+
     footer {
         width: 100%;
         height: 100%;
@@ -1659,7 +1660,7 @@ footer {
         align-items: center;
         margin-top: 5vh;
     }
-    
+
     .footer-content {
         width: 80%;
         height: 50%;
@@ -1669,7 +1670,7 @@ footer {
         gap: 10px;
         flex-wrap: wrap;
     }
-    
+
     .footer-1 {
         width: 100%;
         height: 100%;
@@ -1677,7 +1678,7 @@ footer {
         justify-content: center;
         align-items: start;
     }
-    
+
     .titre-2 {
         width: 100%;
         height: 100%;
@@ -1685,29 +1686,29 @@ footer {
         justify-content: center;
         align-items: start;
     }
-    
+
     .titre-2 a {
         text-decoration: none;
     }
-    
+
     .titre-2 h1 {
         color: white;
         font-size: 8vw;
         margin-top: 4vh;
     }
-    
+
     .titre-2 span {
         color: rgb(255, 77, 0);
         font-size: 7vw;
     }
-    
+
     .footer-1 h2 {
         width: 100%;
         font-size: 6vw;
         color: gray;
         text-align: center;
     }
-    
+
     .footer-1 h4 {
         width: 100%;
         font-size: 3vw;
@@ -1715,11 +1716,12 @@ footer {
         margin-top: 0;
         text-align: center;
     }
-    #footer-h2{
+
+    #footer-h2 {
         font-size: 5vw;
         margin-top: 1vh;
     }
-    
+
     .project {
         width: 100%;
         height: 5vh;
@@ -1728,12 +1730,12 @@ footer {
         align-items: center;
         gap: 35px;
     }
-    
+
     .project a {
         font-size: 7vw;
         color: white;
         margin-top: 1vh;
     }
-    
+
 
 }
