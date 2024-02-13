@@ -274,7 +274,6 @@ header {
 .card-1 {
     min-width: 19vw;
     height: 55vh;
-    background-color: rgb(246, 255, 0);
     margin-left: 1vw;
     border-radius: 10px;
     transition: 0.5s ease-in;
@@ -523,8 +522,8 @@ header {
 
 #page-3 {
     width: 100%;
-    height: 100%;
-    margin-top: 10vh;
+    height: 100vh;
+    margin-top: 2vh;
     display: flex;
     flex-wrap: wrap;
 }
@@ -706,21 +705,22 @@ header {
 }
 
 .page-4-content-1 {
-    width: 40vw;
-    height: 55vh;
+    width: 80%;
+    height: 80%;
     display: flex;
     filter: drop-shadow(20px 20px 15px rgba(0, 0, 0, 0.329));
-    margin-top: 10vh;
+    margin-top: 2vh;
     margin-bottom: 10vh;
+    flex-wrap: wrap;
 }
 
 .page-4-content-1-1 {
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 40vh;
     background-image: url(./Assets/contact.jpg);
     background-size: cover;
     background-position: center;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 20px 0px 0px;
     transition: 0.8s ease-in;
 }
 
@@ -738,10 +738,10 @@ header {
 }
 
 .page-4-content-1-2 {
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 35vh;
     background-color: white;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 0px 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -749,7 +749,7 @@ header {
 }
 
 .contact {
-    width: 80%;
+    width: 100%;
     height: 60%;
     display: flex;
     justify-content: center;
@@ -760,18 +760,19 @@ header {
 .contact h1 {
     width: 100%;
     text-align: center;
-    font-size: 3vw;
-    margin-top: -5vh;
+    font-size: 8vw;
+    margin-top: -7vh;
 }
 
 label {
-    font-size: 1.7vw;
+    font-size: 6vw;
 }
 
 input {
-    font-size: 1.4vw;
+    font-size: 5vw;
     margin-bottom: 1vh;
     border-radius: 5px;
+    width: 50vw;
 }
 
 #contact-botton {
@@ -857,9 +858,18 @@ footer {
 }
 
 @media (max-width:600px) {
+    #bg {
+        width: 100%;
+        height: 130vh;
+        background-image: url(./Assets/bg-2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     header {
         width: 100%;
-        height: 11vh;
+        height: 10vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -867,12 +877,12 @@ footer {
         background: transparent;
         padding-top: 0;
         flex-wrap: wrap;
-        backdrop-filter: blur(100px);
+        backdrop-filter: blur(50px);
     }
 
     .titre {
         width: 100%;
-        height: 7vh;
+        height: 5vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -889,18 +899,18 @@ footer {
 
     .titre span {
         color: rgb(255, 77, 0);
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
     .titre h1 {
         color: white;
-        font-size: 7vw;
+        font-size: 6vw;
         margin-top: 0;
     }
 
     .titre_link {
         width: 100%;
-        height: 10vh;
+        height: 5vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -914,8 +924,7 @@ footer {
 
     .titre_link a h2 {
         color: white;
-        font-size: 4vw;
-        margin-top: -5vh;
+        font-size: 5vw;
     }
 
     #home {
@@ -925,6 +934,7 @@ footer {
         justify-content: center;
         align-items: center;
         margin-top: 0;
+        padding-top: 2vh;
     }
 
     .home_content {
@@ -934,9 +944,8 @@ footer {
 
     .home_content h1 {
         font-size: 8vw;
-        width: 80%;
+        width: 100%;
         text-align: center;
-        margin-top: 5vh;
         margin-left: auto;
         margin-right: auto;
     }
@@ -944,14 +953,15 @@ footer {
     .home_content p {
         padding-top: 5vh;
         padding-bottom: 5vh;
-        width: 60%;
+        font-size: 4vw;
+        width: 80%;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
 
     .home_content h2 {
-        width: 25vw;
+        width: 30vw;
         height: 6vh;
         background-color: rgb(255, 77, 0);
         display: flex;
@@ -959,64 +969,68 @@ footer {
         align-items: center;
         border-radius: 30px;
         color: white;
-        font-size: 4vw;
+        font-size: 5vw;
         margin-left: auto;
         margin-right: auto;
     }
 
     #home-2 {
         width: 100%;
-        height: 60%;
+        height: 20%;
         display: flex;
         flex-wrap: wrap;
-        margin-top: 1vh;
     }
 
     .content-1 {
         width: 100%;
-        height: 30%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 3vh;
     }
 
     .content-1-1 {
-        width: 50vw;
+        width: 100%;
         margin-left: 0;
         color: white;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
     .content-1-1 h1 {
         font-size: 10vw;
-        padding-bottom: 10px;
-        margin-top: 2vh;
-        text-align: center;
+        padding-bottom: 2;
     }
 
     .content-1-1 h3 {
+        font-size: 5vw;
+        width: 60vw;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .content-1-1 p {
-        line-height: 18px;
-        margin-top: 0.5vh;
-        text-align: center;
         line-height: 20px;
-        font-size: 3vw;
+        margin-top: 0;
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
-
     #page-1 {
         width: 100%;
-        height: 90vh;
+        height: 95vh;
     }
-
+    
+    
     .page-1-content {
         width: 100%;
         height: 20vh;
         display: flex;
     }
-
+    
     .page-1-content-titre {
         width: 100%;
         height: 100%;
@@ -1024,45 +1038,45 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
+    
     .page-1-content-titre-1 {
         animation: scolle-1 linear forwards;
         animation-timeline: view();
         animation-range: 0px 600px;
     }
-
+    
     .page-1-content-titre-1 h3 {
         font-size: 4vw;
+        width: 100%;
         text-align: center;
     }
-
+    
     .page-1-content-titre-1 h1 {
         font-size: 8vw;
     }
-
+    
     @keyframes scolle-1 {
         from {
             opacity: 0;
             margin-left: -70vw;
         }
-
+    
         to {
             opacity: 1;
-            margin-left: 4vw;
+            margin-left: 0vw;
         }
     }
-
-
+    
+    
     .page-1-content-botton {
         width: 50%;
         height: 100%;
         display: flex;
         justify-content: end;
         align-items: center;
-        opacity: 0;
         display: none;
     }
-
+    
     .content-botton {
         width: 7vw;
         height: 5vh;
@@ -1071,7 +1085,7 @@ footer {
         margin-top: 2vh;
         gap: 7px;
     }
-
+    
     .material-symbols-outlined {
         font-variation-settings:
             'FILL' 0,
@@ -1079,7 +1093,7 @@ footer {
             'GRAD' 0,
             'opsz' 24
     }
-
+    
     #botton-1 {
         width: 2.5vw;
         height: 5vh;
@@ -1090,47 +1104,49 @@ footer {
         border-radius: 50%;
         border: 1px solid rgb(255, 77, 0);
         transition: 0.8s ease-in;
+        display: none;
     }
-
+    
     #botton-1 a {
         text-decoration: none;
         color: rgb(255, 77, 0);
         padding-top: 0.5vh;
         transition: 0.8s ease-in;
     }
-
+    
     #botton-1:hover {
         background-color: rgb(255, 77, 0);
-
+    
         a {
             color: white;
         }
     }
-
+    
     .page-1-content-2 {
         width: 100%;
         height: 70vh;
         animation: scolle linear forwards;
         animation-timeline: view();
         animation-range: 0px 500px;
-
     }
-
+    
     @keyframes scolle {
         from {
             opacity: 0;
             transform: scale(0);
         }
-
+    
         to {
             opacity: 1;
             transform: scale(1);
         }
     }
-
-
+    
+    .card-content::-webkit-scrollbar {
+        width: 0; 
+    }
     .card-content {
-        width: 100%;
+        width: 90%;
         height: 100%;
         display: flex;
         justify-content: start;
@@ -1139,21 +1155,58 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-
-    .card-content::-webkit-scrollbar {
-        width: 12px;
-        background-color: rgba(0, 0, 0, 0);
-    }
-
+    
     .card-1 {
-        min-width: 60vw;
+        min-width: 55vw;
         height: 55vh;
         margin-left: 3vw;
         border-radius: 10px;
         transition: 0.5s ease-in;
-        margin-right: 2vw;
+        margin-right: 1vw;
     }
-
+    
+    #bg-1 {
+        background-image: url(./Assets/england.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #bg-2 {
+        background-image: url(./Assets/new-york.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #bg-3 {
+        background-image: url(./Assets/germany.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #bg-4 {
+        background-image: url(./Assets/paris.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #bg-5 {
+        background-image: url(./Assets/sahara.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #bg-6 {
+        background-image: url(./Assets/roma.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #bg-7 {
+        background-image: url(./Assets/alasca.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
     .content-card {
         width: 100%;
         height: 100%;
@@ -1164,30 +1217,30 @@ footer {
         text-align: center;
         flex-wrap: wrap;
     }
-
+    
     .content-card-2 {
         margin-bottom: 3vh;
         border-radius: 20px;
     }
-
+    
     .content-card-2 h4 {
         color: white;
-        font-size: 8vw;
+        font-size: 4vw;
     }
-
+    
     .content-card-2 h1 {
         padding-bottom: 2vh;
         color: white;
-        font-size: 5vw;
+        font-size: 8vw;
         width: 100%;
     }
-
+    
     .content-card-2 a {
         text-decoration: none;
     }
-
+    
     .content-card-2 h3 {
-        width: 45vw;
+        width: 40vw;
         height: 5vh;
         display: flex;
         justify-content: center;
@@ -1197,29 +1250,28 @@ footer {
         border-radius: 20px;
         color: rgba(255, 255, 255, 0.482);
         transition: 0.5s ease-in;
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
-
+    
     .card-1:hover {
         transform: scale(1.1);
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.299);
-
+    
         .content-card {
             background-color: rgba(0, 0, 0, 0.479);
             border-radius: 10px;
         }
-
+    
         .content-card-2 h3 {
             background-color: rgb(255, 77, 0);
             color: rgb(255, 255, 255);
         }
     }
-
+    
     .page-1-content-3 {
         width: 100%;
         height: 10vh;
     }
-
     #page-2 {
         width: 100%;
         height: 70vh;
@@ -1231,7 +1283,7 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
+    
     .content-page-2-home {
         width: 100%;
         height: 100%;
@@ -1240,7 +1292,7 @@ footer {
         align-items: center;
         background-color: rgba(0, 0, 0, 0.395);
     }
-
+    
     .content-page-2 {
         width: 80%;
         height: 80%;
@@ -1249,31 +1301,32 @@ footer {
         align-items: center;
         color: white;
     }
-
+    
     .content-page-2 h1 {
-        font-size: 3.8vw;
+        font-size: 10vw;
         text-align: center;
         width: 100%;
         font-weight: 900;
         margin-bottom: 1.5vh;
     }
-
+    
     .content-page-2 p {
-        width: 27vw;
+        width: 60vw;
         text-align: center;
         font-weight: 900;
         margin-bottom: 1.5vh;
+        font-size: 4vw;
     }
-
+    
     .video-1 {
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
+    
     .titre-3 {
         width: 100%;
         height: 10vh;
@@ -1281,36 +1334,27 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
-    .video-1 h1 {
-        width: 100%;
-        font-size: 10vw;
-    }
-
-    .video-1 p {
-        width: 100%;
-    }
-
+    
     .titre-3-content {
         width: 100%;
         height: 100%;
     }
-
+    
     .titre-3-content h2 {
         color: rgb(255, 77, 0);
         font-size: 10vw;
         text-align: center;
         width: 100%;
     }
-
+    
     .titre-3-content h3 {
-        font-size: 1vw;
         text-align: center;
-        width: 80%;
+        width: 20vw;
+        margin-left: 1vw;
         font-size: 3vw;
         font-weight: 900;
     }
-
+    
     .info-botton {
         width: 100%;
         height: 10vh;
@@ -1319,13 +1363,13 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
+    
     .info-botton a {
         text-decoration: none;
     }
-
+    
     .info-botton h2 {
-        width: 30vw;
+        width: 25vw;
         height: 5vh;
         background-color: rgb(255, 77, 0);
         display: flex;
@@ -1334,9 +1378,9 @@ footer {
         border-radius: 30px;
         color: white;
         font-size: 5vw;
-
+    
     }
-
+    
     .page-2-content-3 {
         width: 50%;
         height: 100%;
@@ -1344,7 +1388,22 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
+    
+    .content-page-3 {
+        width: 30vw;
+        height: 43vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-page-3 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        filter: grayscale(40%);
+        margin-top: 4vh;
+    }
     #page-3 {
         width: 100%;
         height: 100%;
@@ -1352,24 +1411,25 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
-
+    
     .page-3-content-1 {
         width: 100%;
-        height: 15vh;
+        height: 10vh;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-bottom: 3vh;
     }
-
+    
     .page-3-content-1 h3 {
         font-size: 3vw;
     }
-
+    
     .page-3-content-1 h1 {
         font-size: 8vw;
     }
-
+    
     .page-3-content-2 {
         width: 100%;
         height: 100%;
@@ -1381,9 +1441,9 @@ footer {
         margin-right: auto;
         gap: 10px;
     }
-
+    
     .img-1 {
-        width: 83%;
+        width: 80%;
         background-image: url(./Assets/jebale-1.jpg);
         background-position: center;
         background-size: cover;
@@ -1391,24 +1451,23 @@ footer {
         animation: scolle-2 linear forwards;
         animation-timeline: view();
         animation-range: 0px 400px;
-        background-repeat: no-repeat;
     }
-
+    
     @keyframes scolle-2 {
         from {
             opacity: 0;
             height: 0;
         }
-
+    
         to {
             opacity: 1;
             height: 43vh;
         }
     }
-
-
+    
+    
     .img-2 {
-        width: 40%;
+        width: 38%;
         height: 40vh;
         background-image: url(./Assets/alone.jpg);
         background-position: center;
@@ -1417,22 +1476,22 @@ footer {
         animation: scolle-3 linear forwards;
         animation-timeline: view();
         animation-range: 0px 200px;
-        background-repeat: no-repeat;
+    
     }
-
+    
     @keyframes scolle-3 {
         from {
             opacity: 0;
             transform: scale(0);
         }
-
+    
         to {
             opacity: 1;
             transform: scale(1);
         }
     }
-
-
+    
+    
     .img-3 {
         width: 40%;
         height: 40vh;
@@ -1443,9 +1502,8 @@ footer {
         animation: scolle-3 linear forwards;
         animation-timeline: view();
         animation-range: 0px 200px;
-        background-repeat: no-repeat;
     }
-
+    
     .img-bg {
         width: 100%;
         height: 100%;
@@ -1455,32 +1513,30 @@ footer {
         justify-content: center;
         align-items: end;
     }
-
+    
     .img-bg-2 {
         width: 100%;
         height: 8vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 4vh;
+        margin-bottom: 1vh;
     }
-
+    
     .img-bg-2-titre {
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
     }
-
+    
     .img-bg-2-titre h1 {
         margin-left: 0;
         font-size: 6vw;
         color: white;
-        width: 100%;
-        text-align: center;
     }
-
+    
     .img-bg-2-botton {
         width: 50%;
         height: 100%;
@@ -1489,7 +1545,7 @@ footer {
         align-items: center;
         display: none;
     }
-
+    
     .material-symbols-outlined {
         font-variation-settings:
             'FILL' 0,
@@ -1497,7 +1553,7 @@ footer {
             'GRAD' 0,
             'opsz' 24
     }
-
+    
     #botton-2 {
         width: 2.5vw;
         height: 5vh;
@@ -1510,97 +1566,21 @@ footer {
         margin-right: 2vw;
         margin-top: 1.5vh;
     }
-
+    
     #botton-2:hover {
         background-color: white;
-
+    
         a {
             color: black;
         }
     }
-
+    
     #botton-2 a {
         text-decoration: none;
         color: white;
         padding-top: 0.5vh;
         transition: 0.8s ease-in;
     }
-
-    #page-4 {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5vh;
-    }
-
-    .page-4-content-1 {
-        width: 80%;
-        height: 80%;
-        display: flex;
-        filter: drop-shadow(20px 20px 15px rgba(0, 0, 0, 0.329));
-        flex-wrap: wrap;
-    }
-
-    .page-4-content-1-1 {
-        width: 100%;
-        height: 40vh;
-        background-image: url(./Assets/contact.jpg);
-        background-size: cover;
-        background-position: center;
-        border-radius: 20px 20px 0px 0px;
-        transition: 0.8s ease-in;
-    }
-
-    .page-4-content-1-2 {
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        border-radius: 20px 0px 20px 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 0.8s ease-in;
-    }
-
-    .contact {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .contact h1 {
-        text-align: center;
-        font-size: 8vw;
-        margin-top: 0;
-    }
-
-    label {
-        font-size: 5vw;
-    }
-
-    input {
-        font-size: 1.4vw;
-        margin-bottom: 1vh;
-        border-radius: 5px;
-        width: 60vw;
-        height: 4vh;
-    }
-
-    #contact-botton {
-        width: 100%;
-        border-radius: 0;
-        height: 5vh;
-        color: white;
-        background-color: gray;
-        font-size: 5vw;
-        margin-bottom: 5vh;
-    }
-
     footer {
         width: 100%;
         height: 100%;
@@ -1608,70 +1588,63 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 5vh;
     }
-
+    
     .footer-content {
         width: 80%;
-        height: 50%;
+        height: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px;
         flex-wrap: wrap;
     }
-
+    
     .footer-1 {
         width: 100%;
-        height: 100%;
+        height: 20%;
         display: flex;
         justify-content: center;
-        align-items: start;
+        align-items: center;
     }
-
+    
     .titre-2 {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
-        align-items: start;
+        align-items: center;
     }
-
+    
     .titre-2 a {
         text-decoration: none;
     }
-
+    
     .titre-2 h1 {
         color: white;
         font-size: 8vw;
-        margin-top: 4vh;
     }
-
+    
     .titre-2 span {
         color: rgb(255, 77, 0);
-        font-size: 7vw;
+        font-size: 8vw;
     }
-
+    
     .footer-1 h2 {
-        width: 100%;
         font-size: 6vw;
         color: gray;
-        text-align: center;
-    }
-
-    .footer-1 h4 {
         width: 100%;
-        font-size: 3vw;
-        color: white;
-        margin-top: 0;
         text-align: center;
     }
-
-    #footer-h2 {
+    
+    .footer-1 h4 {
         font-size: 5vw;
+        color: white;
         margin-top: 1vh;
+        width: 100%;
+        text-align: center;
     }
-
+    
     .project {
         width: 100%;
         height: 5vh;
@@ -1680,12 +1653,14 @@ footer {
         align-items: center;
         gap: 35px;
     }
-
+    
     .project a {
-        font-size: 7vw;
+        font-size: 6vw;
         color: white;
         margin-top: 1vh;
     }
+    
+    
 
 
 }
