@@ -1504,6 +1504,7 @@ footer {
         animation: scolle-3 linear forwards;
         animation-timeline: view();
         animation-range: 0px 200px;
+        background-repeat: no-repeat;
     }
     
     .img-bg {
